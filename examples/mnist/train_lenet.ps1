@@ -4,7 +4,7 @@ param(
 
 $CaffeRoot = (Resolve-Path (Join-Path $PSScriptRoot ..\..))
 if("$BuildDir" -eq "") {
-  $BuildDir = "$CaffeRoot\build"
+  $BuildDir = "$CaffeRoot\scripts\build"
 }
 
-. $BuildDir\tools\caffe.exe train --solver=examples\mnist\lenet_solver.prototxt $args
+. $BuildDir\tools\Release\caffe.exe train --solver=examples\mnist\lenet_solver.prototxt $args

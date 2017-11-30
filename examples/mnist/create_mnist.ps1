@@ -10,9 +10,9 @@ $CaffeRoot = (Resolve-Path (Join-Path $PSScriptRoot ..\..))
 $EXAMPLE = "$CaffeRoot\examples\mnist"
 $DATA = "$CaffeRoot\data\mnist"
 if("$BuildDir" -eq "") {
-  $BuildDir = "$CaffeRoot\build"
+  $BuildDir = "$CaffeRoot\scripts\build"
 }
-$BUILD = "$BuildDir\examples\mnist"
+$BUILD = "$BuildDir\examples\mnist\Release"
 
 $BACKEND = "lmdb"
 
